@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sefa Garip Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets\css\styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.159.0/three.min.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/background.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="loading-bar" id="loadingBar"></div>
+    <canvas id="bg"></canvas>
+
+    <header>
+        <div class="progress-bar" id="progressBar"></div>
+        <a href="#about" class="logo">
+            Sefa<span> </span><span>Garip</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link" data-tr="👤 Hakkımda" data-en="👤 About">👤 Hakkımda &#128100;</a>
+                </li>
+                <!-- 👤 Emoji -->
+                <li><a href="#skills" class="nav-link" data-tr="💻 Yetenekler" data-en="💻 Skills">💻 Yetenekler
+                        &#128187;</a>
+                </li> <!-- 💻 Emoji -->
+                <li><a href="#projects" class="nav-link" data-tr="💼 Projeler" data-en="💼 Projects">💼 Projeler
+                        &#128195;</a>
+                </li> <!-- 💼 Emoji -->
+                <li><a href="#contact" class="nav-link" data-tr="📞 İletişim" data-en="📞 Contact">📞 İletişim
+                        &#128172;</a></li>
+                <!-- 📞 Emoji -->
+            </ul>
+        </nav>
+        <div class="toggles">
+            <button class="theme-toggle" id="themeToggle" aria-label="Tema Değiştir">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="lang-toggle" id="langToggle" aria-label="Dil Değiştir">
+                <span class="current-lang">TR</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero visible" id="about">
+            <div class="hero-content">
+                <h1>Sefa Garip</h1>
+                <p data-tr="Yazılım geliştirme ve veri analitiği alanlarında kendimi sürekli geliştiren bir üniversite öğrencisiyim. Teknolojiye olan ilgim ve problem çözme becerilerimle, projelerde kullanıcı odaklı çözümler üretiyor ve veri analizi ile iş süreçlerine katkı sağlıyorum."
+                    data-en="I am a university student continuously improving myself in software development and data analytics. With my interest in technology and problem-solving skills, I create user-focused solutions in projects and contribute to business processes through data analysis.">
+                    Yazılım geliştirme ve veri analitiği alanlarında kendimi sürekli geliştiren bir üniversite
+                    öğrencisiyim. Teknolojiye olan ilgim ve problem çözme becerilerimle, projelerde kullanıcı odaklı
+                    çözümler üretiyor ve veri analizi ile iş süreçlerine katkı sağlıyorum.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-tr="İletişime Geç" data-en="Contact Me">İletişime
+                        Geç</a>
+                    <a href="assets/Cv-Sefa Garip.pdf" download class="btn btn-outline" data-tr="CV İndir"
+                        data-en="Download CV">CV İndir</a>
+                </div>
+            </div>
+            <img src="assets/images/profile.jpg" alt="Sefa Garip" class="profile-image">
+        </section>
+
+        <section id="skills">
+            <h2 data-tr="Yetenekler" data-en="Skills">Yetenekler</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3 data-tr="Programlama Dilleri" data-en="Programming Languages">Programlama Dilleri</h3>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">C</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Dart (Flutter)</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3 data-tr="Veritabanı" data-en="Database">Veritabanı</h3>
+                    <div class="project-tags">
+                        <span class="tag">Microsoft SQL Server</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3 data-tr="Mobil Geliştirme" data-en="Mobile Development">Mobil Geliştirme</h3>
+                    <div class="project-tags">
+                        <span class="tag">Flutter</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3 data-tr="Web Teknolojileri" data-en="Web Technologies">Web Teknolojileri</h3>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">.NET</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-brain"></i>
+                    <h3 data-tr="Veri Analizi" data-en="Data Analysis">Veri Analizi</h3>
+                    <div class="project-tags">
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Seaborn</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Web Scraping</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <h2 data-tr="Projeler" data-en="Projects">Projeler</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/images/flight-reservation.jpg" alt="Flight Reservation System"
+                        class="project-image">
+                    <div class="project-content">
+                        <h3 data-tr="Uçak Bileti Rezervasyon Sistemi" data-en="Flight Reservation System">Uçak Bileti
+                            Rezervasyon Sistemi</h3>
+                        <p data-tr="Algoritma dersi kapsamında geliştirilen, kullanıcıların uçak bileti rezervasyonu yapmalarını sağlayan bir sistem. C programlama dili kullanılarak geliştirildi."
+                            data-en="A system developed as part of the Algorithm course that allows users to make flight ticket reservations. Developed using the C programming language.">
+                            Algoritma dersi kapsamında geliştirilen, kullanıcıların uçak bileti rezervasyonu yapmalarını
+                            sağlayan bir sistem. C programlama dili kullanılarak geliştirildi.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C</span>
+                            <span class="tag" data-tr="Algoritma" data-en="Algorithm">Algoritma</span>
+                            <span class="tag" data-tr="Dosya İşlemleri" data-en="File Operations">Dosya İşlemleri</span>
+                        </div>
+                        <a href="https://github.com/Sefagarip/Ucak-Bilet-Sistemi" target="_blank"
+                            class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/market-automation.png" alt="Market Automation" class="project-image">
+                    <div class="project-content">
+                        <h3 data-tr="Market Otomasyonu" data-en="Market Automation">Market Otomasyonu</h3>
+                        <p data-tr="Nesne Yönelimli Programlama dersi kapsamında geliştirilen, market işlemlerini otomatikleştiren bir sistem. C# ve Windows Forms kullanılarak geliştirildi."
+                            data-en="A system developed as part of the Object-Oriented Programming course that automates market operations. Developed using C# and Windows Forms.">
+                            Nesne Yönelimli Programlama dersi kapsamında geliştirilen, market işlemlerini
+                            otomatikleştiren bir sistem. C# ve Windows Forms kullanılarak geliştirildi.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">OOP</span>
+                            <span class="tag">LINQ</span>
+                            <span class="tag">Windows Forms</span>
+                        </div>
+                        <a href="https://github.com/Sefagarip/MarketAutomation" target="_blank"
+                            class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/dga-qr.png" alt="DGA QR Project" class="project-image">
+                    <div class="project-content">
+                        <h3>DGA QR Project</h3>
+                        <p data-tr="QR kod tabanlı mobil uygulama. Flutter kullanılarak geliştirildi. PDF görüntüleme ve bulut entegrasyonu özellikleri içerir."
+                            data-en="QR code-based mobile application. Developed using Flutter. Includes PDF viewing and cloud integration features.">
+                            QR kod tabanlı mobil uygulama. Flutter kullanılarak geliştirildi. PDF görüntüleme ve bulut
+                            entegrasyonu özellikleri içerir.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">Google Drive API</span>
+                        </div>
+                        <a href="https://github.com/Sefagarip/Dga-Qr-Project" target="_blank"
+                            class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ongoing-projects">
+            <h2 data-tr="Devam Eden Projeler" data-en="Ongoing Projects">Devam Eden Projeler</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/images/data-hive.jpg" alt="Data Hive" class="project-image">
+                    <div class="project-content">
+                        <h3 data-tr="Veri Kovanı: Türkçe Sentetik Veri Üretim Sistemi"
+                            data-en="Data Hive: Turkish Synthetic Data Generation System">Veri Kovanı: Türkçe Sentetik
+                            Veri Üretim Sistemi</h3>
+                        <p data-tr="TÜBİTAK 2209-A Projesi. Türkçe dilinde sentetik veri üretimi ve kurumsal veri paylaşımı için geliştirilen platform."
+                            data-en="TUBITAK 2209-A Project. A platform developed for Turkish synthetic data generation and enterprise data sharing.">
+                            TÜBİTAK 2209-A Projesi. Türkçe dilinde sentetik veri üretimi ve kurumsal veri paylaşımı için
+                            geliştirilen platform.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Web Scraping</span>
+                            <span class="tag">AI</span>
+                            <span class="tag" data-tr="Veri Analizi" data-en="Data Analysis">Veri Analizi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/elo-rating.png" alt="Sports Elo Rating System" class="project-image">
+                    <div class="project-content">
+                        <h3 data-tr="Spor Branşları için Elo Derecelendirme Sistemi"
+                            data-en="Elo Rating System for Sports">Spor Branşları için Elo Derecelendirme Sistemi</h3>
+                        <p data-tr="Futbol takımları ve futbolcuların Elo derecelendirmelerini hesaplayan ve görselleştiren platform."
+                            data-en="A platform that calculates and visualizes Elo ratings for clubs in football and football players.">
+                            Futbol takımları ve futbolcuların Elo derecelendirmelerini hesaplayan ve görselleştiren
+                            platform.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">.NET</span>
+                            <span class="tag">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 data-tr="İletişim" data-en="Contact">İletişim</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" data-tr-placeholder="Ad" data-en-placeholder="Name"
+                        placeholder="Ad" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" data-tr-placeholder="E-posta"
+                        data-en-placeholder="Email" placeholder="E-posta" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" data-tr-placeholder="Konu"
+                        data-en-placeholder="Subject" placeholder="Konu" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" data-tr-placeholder="Mesajınız"
+                        data-en-placeholder="Your Message" placeholder="Mesajınız" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="cta-button" data-tr="Mesaj Gönder" data-en="Send Message">Mesaj
+                        Gönder</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p data-tr=" 2025 Sefa Garip. Tüm Hakları Saklıdır." data-en=" 2025 Sefa Garip. All Rights Reserved."> 2025 Sefa
+            Garip. Tüm Hakları Saklıdır.</p>
+        <div class="social-links">
+            <a href="https://github.com/Sefagarip"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sefagarip/"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
