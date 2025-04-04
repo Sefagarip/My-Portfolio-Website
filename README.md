@@ -2,7 +2,7 @@
 
 Read this in: [English](#english-description) | [Türkçe](#türkçe-açıklama)
 
-## English Description
+## Description
 
 This project was developed to create my personal web portfolio page. Here, I showcase the projects I have undertaken, the skills I possess, and the work I have done in detail.
 
@@ -29,7 +29,7 @@ This web page has a static structure and offers various features that enhance us
 
 **Sefa Garip**
 
-## Türkçe Açıklama
+## Açıklama
 
 Bu proje, kişisel web portföy sayfamı oluşturmak amacıyla geliştirilmiştir. Burada, gerçekleştirdiğim projeleri, sahip olduğum becerileri ve yaptığım çalışmaları detaylı bir şekilde sergilemekteyim.
 
