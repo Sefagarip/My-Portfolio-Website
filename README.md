@@ -1,6 +1,6 @@
 # Kişisel Web Portföy Sayfası - Personal Web Portfolio Page
 
-Read this in: [English](#english-description) | [Türkçe](#türkçe-açıklama)
+Read this in: [English](#description) | [Türkçe](#açıklama)
 
 ## Description
 
