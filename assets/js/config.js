@@ -1,10 +1,23 @@
 // config.js - Yapılandırma dosyası
+// Helper function to safely get environment variables from window object
+function getEnvVar(name, defaultValue = '') {
+    // Check if window._env_ exists (for Vercel deployment)
+    if (window._env_ && window._env_[name]) {
+        return window._env_[name];
+    }
+    // Fallback to direct values if they exist
+    if (window[name]) {
+        return window[name];
+    }
+    return defaultValue;
+}
+
 const CONFIG = {
     emailjs: {
-        serviceId: process.env.EMAILJS_SERVICE_ID,
-        templateId: process.env.EMAILJS_TEMPLATE_ID,
-        publicKey: process.env.EMAILJS_PUBLIC_KEY,
-        receiverEmail: process.env.EMAILJS_RECEIVER_EMAIL
+        serviceId: getEnvVar('EMAILJS_SERVICE_ID'),
+        templateId: getEnvVar('EMAILJS_TEMPLATE_ID'),
+        publicKey: getEnvVar('EMAILJS_PUBLIC_KEY'),
+        receiverEmail: getEnvVar('EMAILJS_RECEIVER_EMAIL')
     },
     animationSettings: {
         loadingBarDuration: 1000,
