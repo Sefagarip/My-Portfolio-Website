@@ -278,7 +278,7 @@ h2 {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1.5rem;
 }
 
@@ -433,6 +433,14 @@ h2 {
 
 .form-group:last-child {
     grid-column: span 2;
+}
+
+.contact-note {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-top: 0.8rem;
+    text-align: center;
 }
 
 input,
