@@ -1,8 +1,7 @@
-// This file dynamically creates the _env_ object with environment variables for client-side use
+// env.js dosyası
 window._env_ = {};
 
-// Add all your environment variables here
-window._env_.EMAILJS_SERVICE_ID = '%EMAILJS_SERVICE_ID%';
-window._env_.EMAILJS_TEMPLATE_ID = '%EMAILJS_TEMPLATE_ID%';
-window._env_.EMAILJS_PUBLIC_KEY = '%EMAILJS_PUBLIC_KEY%';
-window._env_.EMAILJS_RECEIVER_EMAIL = '%EMAILJS_RECEIVER_EMAIL%';
+window._env_.EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
+window._env_.EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
+window._env_.EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY;
+window._env_.EMAILJS_RECEIVER_EMAIL = process.env.EMAILJS_RECEIVER_EMAIL;
